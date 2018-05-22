@@ -1,0 +1,88 @@
+//
+//  PrefixHeader.pch
+//  城市厨房
+//
+//  Created by 臧昊 on 15/1/20.
+//  Copyright (c) 2015年 臧昊. All rights reserved.
+//
+
+#ifndef _____PrefixHeader_pch
+#define _____PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import"Common.h"
+#import "Reachability.h"
+
+#define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define BackgroundColor [UIColor colorWithRed:234 / 255.0 green:234 / 255.0 blue:234 / 255.0 alpha:1]
+#define kBackgroundGeenColor RGB(114, 165, 35)
+#define kLineColor RGB(187, 187, 187)
+
+#define kImageURL     @"http://115.28.231.147"
+#define kBaseURL  @"http://115.28.231.147"
+// 获取首页广告
+#define kModelRequestGetAdvetisement                    @"ModelRequestGetAdvetisement"
+// 获取首页商品
+#define kModelRequestGetHomeGoods                       @"ModelRequestGetHomeGoods"
+#define kModelRequestGetGoodsListInformation            @"ModelRequestGetGoodsListInformation"
+// 获取商品详情
+#define kModelRequestGetGoodsDetailInformation          @"ModelRequestGetGoodsDetailInformation"
+#define kModelRequestGetGoodsSimpleInformation          @"ModelRequestGetGoodsSimpleInformation"
+// 获取商家信息
+#define kModelRequestGetCompanyInformation              @"ModelRequestGetCompanyInformation"
+// 获取商家全部商品
+#define kModelRequestGetCompanyAllGoods                 @"ModelRequestGetCompanyAllGoods"
+// 获取分类
+#define kModelRequestGetCategoryTop                     @"ModelRequestGetCategoryTop"
+#define kModelRequestGetCategoryChild                   @"ModelRequestGetCategoryChild"
+// 获取登录code
+#define kModelRequestGetUserCode                        @"ModelRequestGetUserCode"
+// 获取用户购物车
+#define kModelRequestGetUserShopCar                     @"ModelRequestGetShopCar"
+// 加入购物车
+#define kModelRequestAdd2ShopCar                        @"ModelRequestAdd2ShopCar"
+// 修改购物车单个商品数量
+#define kModelRequestResetShopCarGoodsNum               @"ModelRequestResetShopCarGoodsNum"
+// 删除购物车中单个商品
+#define kModelRequestRemoveShopCarGoods                 @"ModelRequestRemoveShopCarGoods"
+// 生成订单
+#define kModelRequestCreateOrder                        @"ModelRequestCreateOrder"
+// 查询单个订单
+#define kModelRequestQueryOrder                         @"ModelRequestQueryOrder"
+// 注册
+#define kModelRequestRegister                           @"ModelRequestRegister"
+// 获取用户信息
+#define kModelRequestGetUserInformation                 @"ModelRequestGetUserInformation"
+// 获取用户订单
+#define kModelRequestGetUserOrder                       @"ModelRequestGetUserOrder"
+// 获取用户优惠券
+#define kModelRequestGetUserCoupons                     @"ModelRequestGetUserCoupons"
+// 获取用户地址
+#define kModelRequestGetUserAddress                     @"ModelRequestGetUserAddress"
+// 添加用户地址
+#define kModelRequestAddUserAddress                     @"ModelRequestAddUserAddress"
+// 删除用户地址
+#define kModelRequestResetUserAddress                   @"ModelRequestResetUserAddress"
+// 删除用户地址
+#define kModelRequestRemoveUserAddress                  @"ModelRequestRemoveUserAddress"
+// 修改用户密码
+#define kModelRequestResetUserPwd                       @"ModelRequestResetUserPwd"
+// 获取用户收藏
+#define kModelRequestGetUserCollect                     @"ModelRequestGetUserCollect"
+// 删除用户收藏
+#define kModelRequestRemoveCollectedProduct             @"ModelRequestRemoveCollectedProduct"
+// 添加用户收藏
+#define kModelRequestAddCollectedProduct                @"ModelRequestAddCollectedProduct"
+// 提交意见反馈
+#define kModelRequestSumbitFeedback                     @"ModelRequestSumbitFeedback"
+// 版本更新
+#define kModelRequestExamineVersion                     @"kModelRequestExamineVersion"
+
+
+#define kCheckNetStatus    [Reachability reachabilityForLocalWiFi].currentReachabilityStatus != NotReachable || [Reachability reachabilityForInternetConnection].currentReachabilityStatus != NotReachable
+
+#endif
